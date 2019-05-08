@@ -1,5 +1,5 @@
 import {Queue, QueueProcess, OnQueueActive, OnQueueEvent, BullQueueEvents} from 'nest-bull';
-import {NumberService} from './number.service';
+import {NumberService} from '../app/number.service';
 import {Job, DoneCallback} from 'bull';
 import { Logger } from '@nestjs/common';
 

@@ -3,7 +3,6 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { BullModule } from 'nest-bull';
 import { NumberService } from './number.service';
-import { MyQueue } from './my.queue';
 
 @Module({
   imports: [
@@ -17,6 +16,6 @@ import { MyQueue } from './my.queue';
     }),
   ],
   controllers: [AppController],
-  providers: [AppService, NumberService, MyQueue],
+  providers: [AppService, NumberService],
 })
 export class AppModule {}

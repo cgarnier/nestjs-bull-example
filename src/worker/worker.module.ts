@@ -3,7 +3,7 @@ import { AppService } from '../app/app.service';
 import { BullModule, InjectQueue } from 'nest-bull';
 import { DoneCallback, Job, Queue } from 'bull';
 import { NumberService } from '../app/number.service';
-import { MyQueue } from '../app/my.queue';
+import { MyQueue } from './my.queue';
 
 @Module({
   imports: [
