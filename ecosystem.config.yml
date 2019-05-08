@@ -1,0 +1,7 @@
+apps:
+  - script: ./src/main.ts
+    name: 'api'
+    instance: 1
+  - script: ./src/worker.ts
+    name: 'worker'
+    instance: 4
