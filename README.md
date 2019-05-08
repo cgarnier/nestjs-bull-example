@@ -15,9 +15,22 @@ $ npm install
 ## Running the app
 
 ```bash
+# Start redis
+$ docker-compose up -d
 # Start 1 api and 4 workers
 $ pm2 start ecosystem.config.yml
 
 ```
 
+## Add jobs
 
+```bash
+# Request with httpie
+$ http POST http://localhost:3000/jobs value=2
+```
+
+## Logs
+
+```bash
+pm2 logs worker
+```
