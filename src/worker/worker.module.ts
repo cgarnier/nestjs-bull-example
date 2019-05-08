@@ -1,9 +1,9 @@
 import { Module, OnModuleInit } from '@nestjs/common';
-import { AppService } from './app.service';
+import { AppService } from '../app/app.service';
 import { BullModule, InjectQueue } from 'nest-bull';
 import { DoneCallback, Job, Queue } from 'bull';
-import { NumberService } from './number.service';
-import { MyQueue } from './my.queue';
+import { NumberService } from '../app/number.service';
+import { MyQueue } from '../app/my.queue';
 
 @Module({
   imports: [
