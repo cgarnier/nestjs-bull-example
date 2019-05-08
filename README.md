@@ -4,6 +4,7 @@
   * docker
   * docker-compose
   * pm2 process manager (`npm install pm2@latest -g`)
+  * pm2 ts transpiler (`pm2 install typesrcipt`)
   
 ## Installation
 
