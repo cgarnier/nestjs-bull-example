@@ -1,5 +1,14 @@
-version: "2"
+version: "2.2"
 services:
+  api:
+    build: .
+    ports:
+      - "3000:3000"
+  worker:
+    build: .
+    command: node dist/worker.js
+    scale: 4
+
   redis:
     image: redis
     container_name: redis

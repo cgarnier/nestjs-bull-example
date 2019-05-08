@@ -9,6 +9,7 @@ import { NumberService } from './number.service';
     BullModule.forRoot({
       options: {
         redis: {
+          host: 'redis',
           port: 6379,
         },
       },

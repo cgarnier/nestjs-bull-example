@@ -10,6 +10,7 @@ import { MyQueue } from './my.queue';
     BullModule.forRoot({
       options: {
         redis: {
+          host: 'redis',
           port: 6379,
         },
       },

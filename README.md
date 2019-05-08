@@ -3,22 +3,18 @@
 ## Prerequisite
   * docker
   * docker-compose
-  * pm2 process manager (`npm install pm2@latest -g`)
-  * pm2 ts transpiler (`pm2 install typesrcipt`)
   
 ## Installation
 
 ```bash
-$ npm install
+$ docker-compose build
 ```
 
 ## Running the app
 
 ```bash
-# Start redis
-$ docker-compose up -d
-# Start 1 api and 4 workers
-$ pm2 start ecosystem.config.yml
+# Start the stack
+$ docker-compose up
 
 ```
 
@@ -27,10 +23,4 @@ $ pm2 start ecosystem.config.yml
 ```bash
 # Request with httpie
 $ http POST http://localhost:3000/jobs value=2
-```
-
-## Logs
-
-```bash
-pm2 logs worker
 ```
